@@ -10,4 +10,4 @@ class Button(BaseElement):
 
     def check_enabled(self, nth: int = 0, **kwargs):
         locator = self.get_locator(nth, **kwargs)
-        expect(locator).to_be_ensabled()
+        expect(locator).to_be_enabled()
