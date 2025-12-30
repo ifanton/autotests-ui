@@ -14,8 +14,11 @@ from tools.allure.tags import AllureTag
 @pytest.mark.regression
 @allure.tag(AllureTag.REGRESSION, AllureTag.COURSES)
 @allure.epic(AllureEpic.LMS)
+@allure.parent_suite(AllureEpic.LMS)
 @allure.feature(AllureFeature.COURSES)
+@allure.suite(AllureFeature.COURSES)
 @allure.story(AllureStory.COURSES)
+@allure.sub_suite(AllureStory.COURSES)
 class TestCourses:
     @allure.title("Create course")
     @allure.severity(Severity.CRITICAL)
